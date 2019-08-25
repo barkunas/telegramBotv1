@@ -1,4 +1,3 @@
-import User from './messager/user/user.mjs'
 import MessageRouter from './messager/message/messageRouter.mjs'
 import telegramBot from 'node-telegram-bot-api'
 
@@ -10,7 +9,6 @@ const bot = new telegramBot(telegramToken, { polling: true })
 
 //Добавить бота , все его методы
 
-var user = new User({ from: {}, chat: {} })
 var text = "тестовый текст"
 
 
@@ -19,4 +17,4 @@ bot.on("message", (data) => {
     var messageRouter = new MessageRouter(data);
 })
 
-console.log(user.crap)
+console.log("start server")

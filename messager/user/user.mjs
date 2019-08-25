@@ -18,6 +18,10 @@ export default class User {
     this.crap = new Crap(crapValue);
     this.rank = new Rank(rankValue);
     this.mood = new Mood(moodValue);
+    console.log('создали пользователя')
+  }
+  addNewUserInBD() {
+    console.log('типо создал нового пользователя в БД')
   }
 }
 

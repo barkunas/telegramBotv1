@@ -12,9 +12,12 @@ export default class User {
     this.firstName = from.first_name || 'empty';
     this.lastName = from.last_name || 'empty';
     this.username = from.username || 'empty';
-    this.crap = new Crap(crapValue = false);
-    this.rank = new Rank(rankValue = 0);
-    this.mood = new Mood(moodValue = 0);
+    var crapValue = false;
+    var rankValue = 0;
+    var moodValue = 0;
+    this.crap = new Crap(crapValue);
+    this.rank = new Rank(rankValue);
+    this.mood = new Mood(moodValue);
   }
 }
 

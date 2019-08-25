@@ -11,6 +11,7 @@ const bot = new telegramBot(telegramToken, { polling: true })
 //Добавить бота , все его методы
 
 var user = new User({ from: {}, chat: {} })
+var text = "тестовый текст"
 var messageRouter = new MessageRouter(user, text);
 
 console.log(user.crap)

@@ -12,6 +12,11 @@ const bot = new telegramBot(telegramToken, { polling: true })
 
 var user = new User({ from: {}, chat: {} })
 var text = "тестовый текст"
-var messageRouter = new MessageRouter(user, text);
+
+
+
+bot.on("message", (data) => {
+    var messageRouter = new MessageRouter(data);
+})
 
 console.log(user.crap)

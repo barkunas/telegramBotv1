@@ -1,5 +1,5 @@
 export default class Crap {
-    constructor(value = false) {
+    constructor(value) {
         this.crap = value;
     }
     cangeCrap() {

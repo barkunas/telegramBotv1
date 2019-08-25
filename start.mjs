@@ -1,7 +1,10 @@
 import MessageRouter from './messager/message/messageRouter.mjs'
 import telegramBot from 'node-telegram-bot-api'
+import Token from './token.mjs'
 
-const telegramToken = '888347075:AAHc9RPRChgJo7_qjYi2WkWTYwEglvQjVjk'
+const token = new Token();
+const telegramToken = token.getToken();
+
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 process.env.NTBA_FIX_319 = 1;
 

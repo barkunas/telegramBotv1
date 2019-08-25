@@ -1,0 +1,19 @@
+{
+  "name": "kakakafriendbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "fs-extra": "^8.1.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BarkunAlexey",
+  "license": "ISC"
+}
